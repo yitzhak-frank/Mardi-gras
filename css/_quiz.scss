@@ -1,0 +1,228 @@
+.quiz-body-cover,
+.quiz-body-cover-img {
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.quiz-body-cover-img {
+    background: url(../images/parade.webp)no-repeat center;
+}
+
+.quiz-body-cover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+main.quiz-main {
+
+    h1.quiz-heading {
+        @extend %heading;
+        margin-top: 150px;
+        margin-bottom: 70px;
+        text-align: center;
+
+        @include media-query(md) {
+            margin-bottom: 40px;
+        }
+
+        .firstLetter {
+            @extend %headingFirstLetter;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            background: url(../images/quiz-question-bg.jpg)no-repeat center;
+            background-size: cover;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            max-width: 410px;
+            color: $yellow;
+            border: 3px solid $yellow;
+            position: relative;
+            transform: scale(1.2);
+            overflow: hidden;
+
+            @include media-query(md) {
+                transform: scale(1);
+                margin-bottom: 30px;
+            }
+
+            i.fa-arrow-right {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 5;
+                font-size: 2.5em;
+                color: $yellow;
+                text-shadow:
+                    -0.75px -0.75px 0 $purple,
+                    0.75px -0.75px 0 $purple,
+                    -0.75px 0.75px 0 $purple,
+                    0.75px 0.75px 0 $purple;
+                display: none;
+
+                &:hover {
+                    color: $green;
+                    transform: scale(1.2);
+                }
+            }
+
+            .cover-success {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                background: url(../images/quiz-success-bg.jpg)no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                display: none;
+            }
+
+            .cover-fail {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                background: url(../images/quiz-fail-bg.jpg)no-repeat center;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                display: none;
+            }
+
+            .body-cover {
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3) !important;
+
+                h5 {
+                    text-shadow:
+                        -1px -1px 0 $purple,
+                        1px -1px 0 $purple,
+                        -1px 1px 0 $purple,
+                        1px 1px 0 $purple;
+                }
+
+                .option {
+                    border-radius: 10px;
+                    border: 1px solid $yellow;
+                    color: $yellow;
+
+                    &:focus {
+                        box-shadow: inset 0 -1px 0 #ddd;
+                    }
+
+                    &:hover {
+                        background-color: #f2cc0f81;
+                        color: white;
+                    }
+                }
+            }
+
+            .graph-container {
+                position: fixed;
+                bottom: 0;
+                z-index: 3;
+                width: 100%;
+                height: 10px;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                overflow: hidden;
+
+                .graph {
+                    height: 100%;
+                    float: left;
+                    transition: 1.2s;
+                }
+
+                .success-graph {
+                    background-color: rgb(98, 165, 10);
+                }
+
+                .fail-graph {
+                    background-color: rgb(205, 12, 15);
+                }
+            }
+        }
+
+        .gold-text {
+            color: gold;
+            text-shadow:
+                -1px -1px 0 brown,
+                1px -1px 0 brown,
+                -1px 1px 0 brown,
+                1px 1px 0 brown;
+            border: 3px solid gold;
+        }
+
+        .silver-text {
+            color: silver;
+            text-shadow:
+                -1px -1px 0 gray,
+                1px -1px 0 gray,
+                -1px 1px 0 gray,
+                1px 1px 0 gray;
+            border: 3px solid gray;
+        }
+
+        .bronze-text {
+            color: #cd9732;
+            text-shadow:
+                -1px -1px 0 $purple,
+                1px -1px 0 $purple,
+                -1px 1px 0 $purple,
+                1px 1px 0 $purple;
+            border: 3px solid $purple;
+        }
+
+        .loss-text {
+            color: silver;
+            text-shadow:
+                -1px -1px 0 red,
+                1px -1px 0 red,
+                -1px 1px 0 red,
+                1px 1px 0 red;
+            border: 3px solid red;
+        }
+
+        .result {
+            z-index: 3;
+            display: none;
+            border-radius: 20px;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            @include media-query(md) {
+                padding: 25px;
+            }
+
+            .coin {
+                display: none;
+                margin: 40px;
+            }
+
+            .loss {
+                display: none;
+                width: 14rem;
+                height: 14rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .result-text {
+                margin-top: 20px;
+            }
+        }
+    }
+}

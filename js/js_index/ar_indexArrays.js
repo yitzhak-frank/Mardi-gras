@@ -1,0 +1,152 @@
+export const ar_carouselImages = [
+    '../images/mardi-gras01.jpg',
+    '../images/mardi-gras02.jpg',
+    '../images/mardi-gras03.jpg',
+    '../images/mardi-gras04.jpg',
+    '../images/mardi-gras05.jpg'
+];
+
+export const ar_mobileCarouselImages = [
+    '../images/mobileCarousel01.jpg',
+    '../images/mobileCarousel02.jpg',
+    '../images/mobileCarousel03.jpg',
+    '../images/mobileCarousel04.jpg',
+    '../images/mobileCarousel05.jpg'
+];
+
+export const ar_placesImagesSrc = {
+    'img1': [
+        "../images/sheratonHotel.jpg",
+        "../images/sheratonHotel2.jpg",
+        "../images/sheratonHotel3.jpg",
+    ],
+    'img2': [
+        "../images/Walk-On's.jpg",
+        "../images/Walk-On's2.jpg",
+        "../images/Walk-On's3.jpg",
+        "../images/Walk-On's4.jpg",
+        "../images/Walk-On's5.jpg"
+    ],
+    'img4': [
+        "../images/louisianaChildren'sMuseum.jpg",
+        "../images/louisianaChildren'sMuseum2.jpg",
+        "../images/louisianaChildren'sMuseum3.jpg",
+        "../images/louisianaChildren'sMuseum4.jpg"
+    ],
+    'img5': [
+        "../images/TheRitz-CarltonNewOrleans.jpeg",
+        "../images/TheRitz-CarltonNewOrleans2.jpg",
+        "../images/TheRitz-CarltonNewOrleans3.jpg",
+        "../images/TheRitz-CarltonNewOrleans4.jpg"
+    ],
+    'img6': [
+        "../images/AceHotelNewOrleans.jpg",
+        "../images/AceHotelNewOrleans2.jpg",
+        "../images/AceHotelNewOrleans3.jpg",
+        "../images/AceHotelNewOrleans4.jpg",
+        "../images/AceHotelNewOrleans5.jpg"
+    ]
+}
+
+export const ar_postsSrc = [
+    [
+        'CHgFBtqlKCU',
+        'CHN8pyfFAQw',
+        'CHD2vwVlzBj',
+        'CHBEDV-lkaI',
+        'CG5lfmFlCFS',
+        'CGp0kFFFYl9',
+        'CGnTmL_F3_-',
+        'CGVOd0ll9av',
+        'CGFsfGDFqFI',
+        'CFxTGKnl55c'
+    ],[
+        'CFh2-3flh8C',
+        'CFfdZyCFEUK',
+        'CFNvzXpFFKM',
+        'CEpQwYHFDb-',
+        'CEZyXraFd8n',
+        'CC_qYxglICK',
+        'CCbbeQiFv6F',
+        'CCtiFrOl3Fa',
+        'CCZZ0riFZQy',
+        'CB6gMUvFHm6'
+    ],[
+        'CBitz-LF6H6',
+        'CBUJDHnlyHI',
+        'CAGf84qF8MO',
+        'B_nmSwolwOD',
+        'B-H-0WSla_a',
+        'B920nHOlLAY',
+        'B9pJBO6F3Hx',
+        'B9mW8hHlsR1',
+        'B9kSxi_FY70',
+        'B9VJXNIlz9B'
+    ],[
+        'B9Hg1WGFjid',
+        'B9CpqIXHot9',
+        'B9AsGXdF4BA',
+        'B8_1B7wltbw',
+        'B8_kj6jlizg',
+        'BswZHv1lOrH',
+        'B86oYt7lmnX',
+        'B84uqn-Fq2M',
+        'B83_M5vFJnI',
+        'Bs0z37DFZUI'
+    ],[
+        'B8xVrOllvPK',
+        'BnzHGcDnm-A',
+        'B8ogE0EFjks',
+        'B8ms_Yzl0nk',
+        'B8mcwMHFREU',
+        'B8UQXUoFgSW',
+        'Bo7AB10naEX',
+        'BrnqzG0lgvS',
+        'B7Udf1HlrWp',
+        'Bsrec15FrVc'
+    ],[
+        'B6RDNe1lxD6',
+        'B6L2DVRlyej',
+        'BtBzO6plDay',
+        'B5syiJEFucJ',
+        'B4xnJUfFtLN',
+        'B4gEYjhlnZo',
+        'B4SevDZlnnb',
+        'B4h85IAlllA',
+        'B37KriplBwY',
+        'B3vNRZFFtCo'
+    ],[
+        'B241LUHlJIP',
+        'Btjv18igd7U',
+        'B2CWhZDlDih',
+        'B1_mqByFzFM',
+        'B1MQqu0FFlQ',
+        'B1rwdaqlIDH',
+        'B1Ho-lBnZvq',
+        'B015qC0lX9b',
+        'BzrQBGDFlLR',
+        'BzjBtroFA7h'
+    ],[
+        'BzlnqjqlNDx',
+        'Bu1kDV1g38R',
+        'BzOls4wlE_u',
+        'BzMGee6FUa_',
+        'ByjG_LXFvdd',
+        'ByGDs8Klz9K',
+        'BuPMlFzAENZ',
+        'BxLAQPvlgwt',
+        'BxIdlyfFzBF',
+        'BvfGYQsgfak'
+    ],[
+        'BvZlgAGAXAH',
+        'BvS6qwIgl0w',
+        'Bu-PqzMgKzU',
+        'ByGDs8Klz9K',
+        'BurUANflCrd',
+        'BuovpSaA63U',
+        'BuonbNzAJTY',
+        'BvmeAFmARuH',
+        'BuWzCw5ACnJ',
+        'Bt64h_ygwOR'
+    ]
+];

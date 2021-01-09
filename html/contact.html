@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../images/001-mask.png">
+    <title>Contact Us</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="../js/js_header_footer/headerFooter.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <main class="contact-form">
+        <h1>
+            <span class="firstLetter">C</span>ontact
+            <span class="firstLetter">U</span>s
+        </h1>
+        <p>
+            <span class="firstLetter">W</span>e are waiting for your request and we will be happy to be at your service
+            and assist you as much as we can, we will also be happy to receive optimization and improvement tips and
+            review responses :)
+        </p>
+        <form id="form">
+            <div class="form-row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First name"
+                        required>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last name"
+                        required>
+                </div>
+            </div>
+            <div class="form-row mt-1">
+                <div class="col-sm-12 col-md-6">
+                    <label for="emailAddress"> Email address:</label>
+                    <input type="email" id="emailAddress" name="emailAddress" class="form-control"
+                        placeholder="Email address" required>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="phoneNumber">Phone number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control"
+                        placeholder="Phone number " required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Massege:</label>
+                <textarea type="text" class="form-control" id="comments" style="height: 100px;"
+                    placeholder="Massege"></textarea>
+            </div>
+            <button type="submit" id="submit" class="btn btn-lg btn-block btn-outline mt-4">Send</button>
+        </form>
+    </main>
+    <div class="footerContainer">
+        <footer></footer>
+    </div>
+</body>
+
+</html>

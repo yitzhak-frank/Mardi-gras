@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/coin.css">
+    <link rel="icon" href="../images/001-mask.png">
+    <title>Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/lodash.js"></script>
+    <script type="module" src="../js/js_header_footer/headerFooter.js"></script>
+    <script type="module" src="../js/js_quiz/appQuiz.js"></script>
+</head>
+
+<body style="background-color: gray;">
+    <div class="quiz-body-cover-img"></div>
+    <div class="quiz-body-cover"></div>
+    <header></header>
+    <main class="quiz-main">
+        <h1 class="quiz-heading">
+            <span class="firstLetter">Q</span>uiz
+        </h1>
+        <div class="container">
+            <div class="card shadow">
+                <i id="next" class="fas fa-arrow-right"></i>
+                <div class="cover-success"></div>
+                <div class="cover-fail"></div>
+                <div class="body-cover">
+                    <div class="card-body .d-flex justify-content-center"></div>
+                </div>
+                <div class="graph-container">
+                    <div class="graph success-graph"></div>
+                    <div class="graph fail-graph"></div>
+                </div>
+            </div>
+            <div class="result shadow">
+                <h1 class="result-heading text-center"></h1>
+                <h2 class="result-score text-center"></h2>
+                <div class="coin bronze mx-auto"></div>
+                <div class="coin silver mx-auto"></div>
+                <div class="coin gold mx-auto"></div>
+                <div class="loss mx-auto"><img src="../images/loss.png" alt="fail"></div>
+                <h3 class="result-text text-center"></h3>
+                <h3 class="result-text-2 text-center"></h3>
+            </div>
+        </div>
+    </main>
+    <div class="footerContainer">
+        <footer></footer>
+    </div>
+</body>
+
+</html>

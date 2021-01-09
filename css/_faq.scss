@@ -1,0 +1,135 @@
+main.faq-main {
+    width: 80%;
+    margin: 0 auto;
+
+    @include media-query(sm) {
+        width: 90%;
+    }
+
+    h1.faq-heading {
+        @extend %heading;
+        margin-top: 150px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        .firstLetter {
+            @extend %headingFirstLetter;
+        }
+    }
+
+
+
+    ul.faq-list {
+        list-style-type: none;
+
+        .question {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1px;
+            padding: 10px;
+            padding-left: 45px;
+            padding-right: 15px;
+            width: 100%;
+            min-height: 75px;
+            border: 2px solid $purple;
+            background-color: $lightGray;
+            cursor: pointer;
+
+            @include media-query(lg) {
+                min-height: 50px;
+            }
+
+            i.fa-chevron-down {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                font-size: 2em;
+                color: $green;
+                text-shadow:
+                    -1px -1px 0 $purple,
+                    1px -1px 0 $purple,
+                    -1px 1px 0 $purple,
+                    1px 1px 0 $purple;
+                transition: 0.7s ease-in-out;
+
+                @include media-query(lg) {
+                    font-size: 1.5em;
+                    top: 12px;
+                    left: 12px;
+                }
+            }
+
+            h1 {
+                color: $yellow;
+                font-size: 1.75em;
+                text-align: center;
+                text-shadow:
+                    -1px -1px 0 $purple,
+                    1px -1px 0 $purple,
+                    -1px 1px 0 $purple,
+                    1px 1px 0 $purple;
+
+                @include media-query(lg) {
+                    font-size: 1.45rem;
+                }
+
+                @include media-query(md) {
+                    font-size: 1.1em;
+                }
+
+                .firstLetter {
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 1.8rem;
+                    color: $green;
+
+                    @include media-query(lg) {
+                        font-size: 1.5rem;
+                    }
+
+                    @include media-query(md) {
+                        font-size: 1.15em;
+                    }
+                }
+            }
+        }
+
+        .question-1 {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .answer {
+            display: none;
+            width: 100%;
+            min-width: 100%;
+            padding: 50px;
+            opacity: 1 !important;
+            background-color: #8cbf3f;
+            border: 2px solid $purple;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            @include media-query(md) {
+                padding: 20px;
+            }
+
+            p {
+                margin: 0;
+                text-align: justify;
+                color: $lightGray;
+                text-shadow: 1px 1px 8px black;
+                font-size: 1.1em;
+                line-height: 1.55;
+                max-width: 900px;
+                margin: 0 auto;
+
+                @include media-query(md) {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}

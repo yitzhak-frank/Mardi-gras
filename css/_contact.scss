@@ -1,0 +1,120 @@
+$green:#8cbf3f;
+$yellow:#f2cc0f;
+$purple:#9452a7;
+$lightGray:#f2f2f2;
+
+.contact-form {
+    margin-top: 100px;
+    padding: 30px;
+
+    @include media-query(sm) {
+        padding: 15px;
+    }
+
+    h1 {
+        @extend %heading;
+        margin: 25px;
+        text-align: center;
+
+        .firstLetter {
+            @extend %headingFirstLetter;
+        }
+    }
+
+    p {
+        width: 50%;
+        margin: 0 auto;
+        color: $purple;
+        text-shadow: 1px 1px 8px $green;
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 30px;
+        margin-bottom: 100px;
+
+        @include media-query(lg) {
+            width: 70%;
+        }
+
+        @include media-query(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media-query(sm) {
+            width: 90%;
+            font-size: 0.9em;
+            line-height: 22px;
+        }
+
+        .firstLetter {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: $green;
+            text-shadow:
+                -1px -1px 0 $purple,
+                1px -1px 0 $purple,
+                -1px 1px 0 $purple,
+                1px 1px 0 $purple;
+        }
+    }
+
+    #form {
+        background-color: $lightGray;
+        width: 80%;
+        margin: 0 auto;
+        color: $purple;
+        padding: 20px;
+        border-radius: 15px;
+        border: solid 2px $purple;
+
+        @include media-query(sm) {
+            width: 99%;
+        }
+
+        label {
+            margin-left: 2px;
+            margin-top: 5px;
+
+            @include media-query(md) {
+                visibility: hidden;
+            }
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(0, 0, 0, 0.3);
+
+            @include media-query(md) {
+                color: $purple;
+                opacity: 0.7;
+            }
+        }
+
+        input {
+            outline: none !important;
+
+            &:not(:placeholder-shown) {
+                border-color: darkred;
+                border-width: 2px;
+            }
+
+            &:valid {
+                border-color: $green;
+                background-color: white;
+            }
+
+            &:focus {
+                box-shadow: inset 0 -1px 0 #ddd;
+            }
+        }
+
+        button {
+            color: $purple;
+            border: solid 2px $purple;
+
+            &:hover {
+                background-color: $purple;
+                color: white;
+            }
+        }
+    }
+}

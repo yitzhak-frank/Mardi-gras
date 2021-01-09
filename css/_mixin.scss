@@ -1,0 +1,36 @@
+@mixin media-query($size) {
+
+    @if ($size==xl) {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if ($size==lg) {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if ($size==md) {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if ($size==sm) {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+}
+
+@mixin imgContainerSize($width, $height) {
+    grid-template-columns: repeat($width, 1fr);
+    grid-template-rows: repeat($height, 1fr);
+}
+
+@mixin imgSize($width, $height) {
+    grid-column: $width;
+    grid-row: $height;
+}

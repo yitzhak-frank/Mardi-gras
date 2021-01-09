@@ -1,0 +1,316 @@
+%icon {
+    padding: 13px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 10px;
+
+    &:hover {
+        color: $purple;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.dark {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+
+
+
+    .light-box {
+        position: relative;
+        margin: 0 auto;
+        max-width: 60%;
+        padding: 2.5%;
+        padding-top: 70px;
+        background-color: silver;
+        margin-bottom: 100px;
+
+        @include media-query(lg) {
+            max-width: 70%;
+        }
+
+        @include media-query(md) {
+            max-width: 80%;
+        }
+
+        @include media-query(sm) {
+            max-width: 95%;
+        }
+
+        i.arow {
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        i.fa-chevron-right,
+        i.fa-chevron-left {
+            position: fixed;
+            top: calc(50% - 25px);
+            z-index: 5;
+            height: 175px;
+            width: 55px;
+            color: silver;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        i.fa-chevron-right {
+            right: 10%;
+
+            @include media-query(lg) {
+                right: 0;
+            }
+        }
+
+        i.fa-chevron-left {
+            left: 10%;
+
+            @include media-query(lg) {
+                left: 25px;
+            }
+        }
+
+        .fa-times {
+            position: absolute;
+            top: 10px;
+            right: 4%;
+            font-size: 2em;
+            padding: 9px;
+            padding-left: 14.5px;
+            @extend %icon;
+        }
+
+        i.fa-heart {
+            position: absolute;
+            top: 10px;
+            left: calc(6% + 50px);
+            @extend %icon;
+        }
+
+        i.fas.fa-heart {
+            display: none;
+        }
+
+        .fa-download {
+            position: absolute;
+            top: 10px;
+            left: 4%;
+            @extend %icon;
+        }
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+            cursor: zoom-in;
+            transition: 1s;
+        }
+    }
+}
+
+.media-type {
+    position: fixed;
+    top: 110px;
+    left: 4%;
+    z-index: 3;
+
+    i {
+        font-size: 3em;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.55);
+        border-radius: 15%;
+        cursor: pointer;
+
+        @include media-query(md) {
+            font-size: 2em;
+        }
+    }
+
+    i.fa-youtube {
+        color: rgb(212, 18, 18);
+
+        &:hover {
+            background-color: white;
+            color: $green;
+        }
+    }
+
+    i.fa-images {
+        color: $purple;
+
+        &:hover {
+            background-color: white;
+            color: $green;
+        }
+    }
+}
+
+.media-heading {
+    position: fixed;
+    top: 90px;
+    left: calc(50% - 150px);
+    z-index: 3;
+    width: 300px;
+    padding-top: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+
+    &:hover {
+        background-color: white;
+    }
+
+    @include media-query(md) {
+        width: 250px;
+        left: calc(50% - 125px);
+    }
+
+    @include media-query(sm) {
+        width: 150px;
+        left: calc(4% + 150px);
+    }
+
+    h1.photos-heading,
+    h1.videos-heading {
+        @extend %heading;
+        text-align: center;
+
+        .firstLetter {
+            @extend %headingFirstLetter;
+        }
+    }
+
+    h1.videos-heading {
+        display: none;
+    }
+
+}
+
+.main-media {
+    .photos-container {
+        margin: 0 auto;
+        margin-top: 170px;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-query(sm) {
+            margin-top: 155px;
+        }
+
+        .images-container {
+            margin: 15px;
+            width: 100%;
+            background-color: $lightGray;
+
+            .img-box {
+                position: relative;
+                margin-top: 30px;
+
+                @include media-query(sm) {
+                    margin-top: 20px;
+                }
+
+                .media-img-cover {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.2);
+
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+
+                    i.fa-heart {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        padding: 13px;
+                        height: 50px;
+                        width: 50px;
+                        font-size: 1.5em;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        color: #fff;
+                        border-radius: 10px;
+
+                        &:hover {
+                            color: $purple;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+
+                    i.fas.fa-heart {
+                        display: none;
+                    }
+
+                    i.fa-download {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50px;
+                        width: 50px;
+                        font-size: 1.5em;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        color: #fff;
+                        border-radius: 10px;
+
+                        &:hover {
+                            color: $purple;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+
+                .madia-img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .images-container-3 {
+            @include media-query(lg) {
+                display: none;
+            }
+        }
+
+        .images-container-2 {
+            @include media-query(sm) {
+                display: none;
+            }
+        }
+    }
+
+    .videos-container {
+        margin: 0 auto;
+        margin-top: 190px;
+        width: 95%;
+
+        iframe {
+            width: 47%;
+            margin: 1.5%;
+
+            @include media-query(md) {
+                width: 95%;
+                margin: 2.5%;
+            }
+        }
+    }
+}
